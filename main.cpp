@@ -8,6 +8,7 @@ int main(int argc, char* argv[]) {
 	{
 		// •¶š—ñargv‚Ìi”Ô‚ğ•\¦
 		printf(argv[i]);
+
 		// ‰üs
 		printf("\n");
 	}
