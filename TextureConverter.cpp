@@ -2,7 +2,6 @@
 #include <DirectXTexMipmaps.cpp>
 
 
-
 void TextureConverter::ConverterTextureWICToDDS(const std::string& filePath)
 {
 	// テクスチャファイルを読み込み
