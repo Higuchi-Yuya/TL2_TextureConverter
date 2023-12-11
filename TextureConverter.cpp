@@ -129,7 +129,8 @@ void TextureConverter::SaveDDSTextureToFile(int numOptions, char* options[])
 	ScratchImage converted;
 
 	result = Compress(scratchImage_.GetImages(), scratchImage_.GetImageCount(), metaData_,
-		DXGI_FORMAT_BC7_UNORM_SRGB, TEX_COMPRESS_BC7_QUICK | TEX_COMPRESS_SRGB_OUT | TEX_COMPRESS_PARALLEL, 1.0f, converted);
+		DXGI_FORMAT_BC7_UNORM_SRGB, TEX_COMPRESS_BC7_QUICK | TEX_COMPRESS_SRGB_OUT | 
+		TEX_COMPRESS_PARALLEL, 1.0f, converted);
 	if (SUCCEEDED(result)){
 		scratchImage_ = std::move(converted);
 		metaData_ = scratchImage_.GetMetadata();
